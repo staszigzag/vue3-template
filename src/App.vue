@@ -1,12 +1,11 @@
 <script setup lang="ts">
-  import { RouterView } from 'vue-router'
+  // import { RouterView } from 'vue-router'
   import { ref } from 'vue'
   import AppLayout from './layouts/AppLayout.vue'
   import { TheAppConfirmAction, useConfirmActionStore } from '@/modules/confirm-action'
 
   const store = useConfirmActionStore()
-store.confirmUserAction()
-
+  store.confirmUserAction()
 
   const loading = ref(true)
 
@@ -37,9 +36,14 @@ store.confirmUserAction()
         indeterminate
       />
       <AppLayout v-else>
-        <v-main>
+        <router-view v-slot="{ Component }">
+          <transition appear mode="out-in" name="opacity-fade">
+            <component :is="Component" />
+          </transition>
+        </router-view>
+        <!-- <transition appear mode="out-in" name="opacity-fade">
           <router-view />
-        </v-main>
+        </transition> -->
       </AppLayout>
     </transition>
     <!-- <TheAppConfirmAction/> -->

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useLifecycleLogger } from '@/common/hooks/lifecycleLogger'
+  import { useLifeСycleLogger } from '@/common/hooks/lifecycleLogger'
 
-const name = 'Page two'
-useLifecycleLogger({ name })
+  const name = 'Page two'
+  useLifeСycleLogger({ name })
 </script>
 
 <template>

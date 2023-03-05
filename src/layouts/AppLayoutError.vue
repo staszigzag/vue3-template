@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useLifecycleLogger } from '@/common/hooks/lifecycleLogger'
-import TheNavMenu from '@/components/TheNavMenu.vue'
+  import { useLifeСycleLogger } from '@/common/hooks/lifecycleLogger'
+  import TheNavMenu from '@/components/TheNavMenu.vue'
 
-useLifecycleLogger({ name: 'AppLayoutError' })
+  useLifeСycleLogger({ name: 'AppLayoutError' })
 </script>
 
 <template>

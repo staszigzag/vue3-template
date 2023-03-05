@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { useLifecycleLogger } from '@/common/hooks/lifecycleLogger'
+  import { useLifeСycleLogger } from '@/common/hooks/lifecycleLogger'
+  import TheNavMenuVue from '@/components/TheNavMenu.vue'
 
-useLifecycleLogger({ name: 'AppLayoutDefault' })
+  useLifeСycleLogger({ name: 'AppLayoutDefault' })
 </script>
 
 <template>
+  <TheNavMenuVue />
+
   <main class="app-layout-default">
     <h2>AppLayoutDefault</h2>
     <slot />
@@ -12,6 +15,6 @@ useLifecycleLogger({ name: 'AppLayoutDefault' })
 </template>
 
 <style scoped lang="scss">
-.app-layout-default {
-}
+  .app-layout-default {
+  }
 </style>

@@ -1,6 +1,7 @@
 import { ref } from 'vue'
 import type { AccessScopesEnum } from '@/modules/auth/services/auth.types'
 
+// проверка прав юзера на дейчтвие
 function createService() {
   const userScopes = ref<Record<AccessScopesEnum, boolean | undefined> | null>(null)
 

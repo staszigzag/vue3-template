@@ -30,7 +30,7 @@ const router = createRouter({
       name: RouteNamesEnum.three,
       component: () => import('@/pages/Three.vue'),
       meta: {
-        layout: AppLayoutsEnum.login,
+        layout: AppLayoutsEnum.default,
         accessScopes: [AccessScopesEnum.CAN_READ_BOOKS]
       }
     },

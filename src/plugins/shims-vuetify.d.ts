@@ -1,1 +1,1 @@
-// declare module 'vuetify/lib/util/colors'
+declare module 'vuetify/lib/util/colors'

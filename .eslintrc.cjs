@@ -20,7 +20,10 @@ module.exports = {
     "import/no-unresolved": "off",
     "no-plusplus": "off",
     "consistent-return": "warn",
-    "no-param-reassign": "warn"
+    "no-param-reassign": "warn",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "import/no-extraneous-dependencies": "warn"
     // "no-shadow": "off"
         // "no-semi": "warn"
   //   "no-console": "warn"

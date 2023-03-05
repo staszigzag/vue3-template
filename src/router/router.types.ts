@@ -4,9 +4,9 @@ import type { AccessScopesEnum } from '@/modules/auth/services/auth.types'
 
 declare module 'vue-router' {
   interface RouteMeta {
-    layout?: AppLayoutsEnum
-    layoutComponent?: VueElement
-    accessScopes?: AccessScopesEnum[]
+    layout?: AppLayoutsEnum // имя лаяута
+    layoutComponent?: VueElement // компонент лаяута
+    accessScopes?: AccessScopesEnum[] // какие должны быть права для этого роута
   }
 }
 
