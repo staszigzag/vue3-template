@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useCounterStore } from '@/stores/counter'
-import { useCounterStore2 } from '@/stores/counter copy'
 
 // const t = 'dfddf'
 
